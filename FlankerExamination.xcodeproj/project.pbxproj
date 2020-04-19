@@ -13,6 +13,12 @@
 		E38A249C239C3C3500F8B077 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38A249A239C3C3500F8B077 /* Main.storyboard */; };
 		E38A249E239C3C3A00F8B077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E38A249D239C3C3A00F8B077 /* Assets.xcassets */; };
 		E38A24A1239C3C3A00F8B077 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38A249F239C3C3A00F8B077 /* LaunchScreen.storyboard */; };
+		E38A24A9239C3CA000F8B077 /* ArrowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A24A8239C3CA000F8B077 /* ArrowModel.swift */; };
+		E38A24AD239C941100F8B077 /* schoolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A24AC239C941100F8B077 /* schoolViewController.swift */; };
+		E38A24B0239C94D700F8B077 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A24AF239C94D700F8B077 /* JsonManager.swift */; };
+		E38A24B2239CA33400F8B077 /* selectSchoolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A24B1239CA33400F8B077 /* selectSchoolCell.swift */; };
+		E38A24B5239CA7FF00F8B077 /* gameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A24B4239CA7FF00F8B077 /* gameView.swift */; };
+		E38A24B7239DBC4B00F8B077 /* scoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38A24B6239DBC4B00F8B077 /* scoreController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		E38A249D239C3C3A00F8B077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E38A24A0239C3C3A00F8B077 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E38A24A2239C3C3A00F8B077 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E38A24A8239C3CA000F8B077 /* ArrowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowModel.swift; sourceTree = "<group>"; };
+		E38A24AC239C941100F8B077 /* schoolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schoolViewController.swift; sourceTree = "<group>"; };
+		E38A24AF239C94D700F8B077 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
+		E38A24B1239CA33400F8B077 /* selectSchoolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectSchoolCell.swift; sourceTree = "<group>"; };
+		E38A24B4239CA7FF00F8B077 /* gameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameView.swift; sourceTree = "<group>"; };
+		E38A24B6239DBC4B00F8B077 /* scoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +52,7 @@
 		E38A2488239C3C3500F8B077 = {
 			isa = PBXGroup;
 			children = (
+				E38A24AE239C94A900F8B077 /* Model */,
 				E38A2493239C3C3500F8B077 /* FlankerExamination */,
 				E38A2492239C3C3500F8B077 /* Products */,
 			);
@@ -58,13 +71,50 @@
 			children = (
 				E38A2494239C3C3500F8B077 /* AppDelegate.swift */,
 				E38A2496239C3C3500F8B077 /* SceneDelegate.swift */,
-				E38A2498239C3C3500F8B077 /* ViewController.swift */,
-				E38A249A239C3C3500F8B077 /* Main.storyboard */,
-				E38A249D239C3C3A00F8B077 /* Assets.xcassets */,
-				E38A249F239C3C3A00F8B077 /* LaunchScreen.storyboard */,
+				E38A24AB239C8C2500F8B077 /* Views */,
+				E38A24AA239C8C0A00F8B077 /* Controllers */,
 				E38A24A2239C3C3A00F8B077 /* Info.plist */,
 			);
 			path = FlankerExamination;
+			sourceTree = "<group>";
+		};
+		E38A24AA239C8C0A00F8B077 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E38A24B3239CA76200F8B077 /* Cells */,
+				E38A2498239C3C3500F8B077 /* ViewController.swift */,
+				E38A24AC239C941100F8B077 /* schoolViewController.swift */,
+				E38A24B4239CA7FF00F8B077 /* gameView.swift */,
+				E38A24B6239DBC4B00F8B077 /* scoreController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E38A24AB239C8C2500F8B077 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E38A249D239C3C3A00F8B077 /* Assets.xcassets */,
+				E38A249F239C3C3A00F8B077 /* LaunchScreen.storyboard */,
+				E38A249A239C3C3500F8B077 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E38A24AE239C94A900F8B077 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E38A24A8239C3CA000F8B077 /* ArrowModel.swift */,
+				E38A24AF239C94D700F8B077 /* JsonManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E38A24B3239CA76200F8B077 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E38A24B1239CA33400F8B077 /* selectSchoolCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +190,13 @@
 			files = (
 				E38A2499239C3C3500F8B077 /* ViewController.swift in Sources */,
 				E38A2495239C3C3500F8B077 /* AppDelegate.swift in Sources */,
+				E38A24B7239DBC4B00F8B077 /* scoreController.swift in Sources */,
+				E38A24B2239CA33400F8B077 /* selectSchoolCell.swift in Sources */,
 				E38A2497239C3C3500F8B077 /* SceneDelegate.swift in Sources */,
+				E38A24B0239C94D700F8B077 /* JsonManager.swift in Sources */,
+				E38A24AD239C941100F8B077 /* schoolViewController.swift in Sources */,
+				E38A24B5239CA7FF00F8B077 /* gameView.swift in Sources */,
+				E38A24A9239C3CA000F8B077 /* ArrowModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,15 +340,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7XH2RG9LP5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FlankerExamination/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dom.Inspiration.FlankerExamination;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +361,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7XH2RG9LP5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FlankerExamination/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Dom.Inspiration.FlankerExamination;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
